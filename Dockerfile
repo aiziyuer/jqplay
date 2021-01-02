@@ -1,3 +1,4 @@
+FROM node:14.15 AS front
 WORKDIR /app
 ADD . .
 RUN echo '{ "allow_root": true }' > ~/.bowerrc
